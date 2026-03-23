@@ -5,20 +5,20 @@
 class HubstaffTui < Formula
   desc "Fast Hubstaff time tracking TUI for tmux floating popups"
   homepage "https://github.com/Nathan-ma/hubstaff-tui"
-  version "0.2.0"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v0.2.0/hubstaff-tui_0.2.0_darwin_amd64.tar.gz"
-      sha256 "293a5a2a3e069f15390b420d8699905989c341b2dc3dc6871bd98536a8382cd3"
+      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v1.0.0/hubstaff-tui_1.0.0_darwin_amd64.tar.gz"
+      sha256 "7205d7e8e0fda5d72e80f2053aa76aa035847b757f8d2210f775701f02f23f6a"
 
       define_method(:install) do
         bin.install "hubstaff-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v0.2.0/hubstaff-tui_0.2.0_darwin_arm64.tar.gz"
-      sha256 "705a00b437e3f4d2b645ecd285da637bc2914694bceec70748bc1e11b7f3ed36"
+      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v1.0.0/hubstaff-tui_1.0.0_darwin_arm64.tar.gz"
+      sha256 "949f3c9a662374803745f5eb82983d831b7581cfc4d8c426d2ca1c1b2d01bdcb"
 
       define_method(:install) do
         bin.install "hubstaff-tui"
@@ -28,15 +28,15 @@ class HubstaffTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v0.2.0/hubstaff-tui_0.2.0_linux_amd64.tar.gz"
-      sha256 "5c7e154c60f395bd91882229ae133484336b81c150289a58f2665bd3a291beab"
+      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v1.0.0/hubstaff-tui_1.0.0_linux_amd64.tar.gz"
+      sha256 "65d476e61dabe51425b404130e5ccc37bc6632a2ec0cac8ac4f25348c4f8e368"
       define_method(:install) do
         bin.install "hubstaff-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v0.2.0/hubstaff-tui_0.2.0_linux_arm64.tar.gz"
-      sha256 "68b3f1199f9fd4faa652db0abf12d73d107ee203edd58c32f8b24819dcf44004"
+      url "https://github.com/Nathan-ma/hubstaff-tui/releases/download/v1.0.0/hubstaff-tui_1.0.0_linux_arm64.tar.gz"
+      sha256 "8cbcddcfd5caac4dba4da4cdde0f743eac8c80acb390d9c4192324a9bea87c8f"
       define_method(:install) do
         bin.install "hubstaff-tui"
       end
